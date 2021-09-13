@@ -372,7 +372,13 @@
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
     .customer-name,
     .customer-welcome + .authorization-link {
-        display: none;
+        display: none !important;
+    }
+
+    .header.panel {
+        > .header.links {
+            display: none !important;
+        }
     }
 
     .nav-sections .switcher-trigger strong:after {
