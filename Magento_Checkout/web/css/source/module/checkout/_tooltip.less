@@ -37,6 +37,7 @@
 & when (@media-common = true) {
 
     .field-tooltip {
+        display:none !important;
         cursor: pointer;
         position: absolute;
         right: 0;
@@ -58,7 +59,7 @@
 
         .field-tooltip-action {
             .lib-icon-font(
-                @checkout-tooltip-icon__content,
+                    @checkout-tooltip-icon__content,
                 @_icon-font-size: @checkout-tooltip-icon__font-size,
                 @_icon-font-text-hide: true,
                 @_icon-font-color: @checkout-tooltip-icon__color,
@@ -99,9 +100,9 @@
             &:before,
             &:after {
                 .lib-arrow(
-                @_position: left,
-                @_size: @checkout-tooltip-icon-arrow__font-size,
-                @_color: @checkout-tooltip-content__background-color
+                    @_position: left,
+                    @_size: @checkout-tooltip-icon-arrow__font-size,
+                    @_color: @checkout-tooltip-content__background-color
                 );
                 .lib-css(left, @checkout-tooltip-icon-arrow__left);
                 .lib-css(top, @checkout-tooltip-content__padding);
